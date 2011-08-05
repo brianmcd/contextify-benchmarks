@@ -1,15 +1,5 @@
 var Contextify = require('contextify');
 
-var initialMemUse = process.memoryUsage(),
-    initialRSS = initialMemUse.rss/1048576,
-    initialVSize = initialMemUse.vsize/1048576,
-    initialHeapTotal = initialMemUse.heapTotal/1048576,
-    initialHeapUsed = initialMemUse.heapUsed/1048576;
-console.log('\tInitial memory usage: ');
-console.log("\tRSS: " + initialRSS);
-console.log("\tVSize: " + initialVSize);
-console.log("\tHeapTotal: " + initialHeapTotal);
-console.log("\tHeapUsed: " + initialHeapUsed);
 var start = Date.now();
 for (var i = 0; i < 20000; i++) {
     (function () {
